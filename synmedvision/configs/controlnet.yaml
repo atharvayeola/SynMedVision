@@ -1,0 +1,3 @@
+enabled: true
+control_type: "segmentation_mask"
+conditioning_weight: 1.0

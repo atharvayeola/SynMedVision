@@ -1,0 +1,10 @@
+dataset: "pcam"             # fixed for MVP
+root: "data/pcam"
+img_size: 256
+val_split: 0.15
+test_split: 0.15
+split_by_patient: true
+make_masks: false            # histo masks optional
+normalize:
+  method: "none"             # histo: "macenko" optional later
+output_csv: "data/pcam/manifest.csv"
