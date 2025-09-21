@@ -3,12 +3,18 @@
 from __future__ import annotations
 
 import argparse
+import sys
 import tempfile
 from pathlib import Path
 from typing import Optional
 
 import streamlit as st
 from PIL import Image
+
+repo_root = Path(__file__).resolve().parents[2]
+repo_root_str = str(repo_root)
+if repo_root_str not in sys.path:
+    sys.path.append(repo_root_str)
 
 from src.cli.generate import generate_samples
 from src.eval.privacy import privacy_report
