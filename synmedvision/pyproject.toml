@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synmedvision"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "torch", "torchvision", "pytorch-lightning",
+  "diffusers", "accelerate", "transformers",
+  "lpips", "timm", "scikit-learn", "scipy", "pandas", "numpy",
+  "umap-learn", "matplotlib", "opencv-python", "albumentations", "kornia",
+  "streamlit", "einops",
+  "Pillow", "imagehash", "retrying", "jinja2"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

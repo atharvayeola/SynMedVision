@@ -1,0 +1,28 @@
+real_dir: "data/pcam/val_images"
+synth_dir: "out/samples"
+labels_csv: "data/pcam/val_labels.csv"
+image_size: 256
+
+metrics:
+  realism:
+    kid: true
+    fid: true
+    lpips: true
+  utility:
+    tstr: true
+    trts: true
+    clf_model: "resnet18"
+    epochs: 10
+    batch: 64
+  privacy:
+    nn_features: "resnet50"      # or "clip"
+    nn_tau: 0.28
+    membership_inference: true
+    phash_dup_threshold: 6
+  diversity:
+    feature_entropy: true
+    cov_rank_ratio: true
+
+report:
+  html_out: "reports/pcam_eval.html"
+  sample_grid: true

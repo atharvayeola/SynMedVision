@@ -1,0 +1,9 @@
+model: "stylegan2"
+image_size: 256
+batch: 64
+kimgs: 20000
+gpus: 1
+class_conditional: true
+augment: "ada"
+out_dir: "out/stylegan2"
+seed: 123
