@@ -6,7 +6,11 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
-app = FastAPI(title="SynMedVision API")
+app = FastAPI(
+    title="MediSynVision API",
+    description="API for generating synthetic medical images using Stable Diffusion",
+    version="1.0.0"
+)
 
 # Allow CORS for local development
 app.add_middleware(

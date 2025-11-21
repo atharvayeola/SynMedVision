@@ -46,7 +46,7 @@ function App() {
         {/* Header */}
         <header className="mb-16 text-center space-y-4">
           <h1 className="text-6xl font-bold tracking-tighter bg-gradient-to-b from-white to-zinc-500 bg-clip-text text-transparent">
-            SynMedVision
+            MediSynVision
           </h1>
           <p className="text-zinc-400 text-xl font-light tracking-wide">
             Advanced Synthetic Medical Imaging
@@ -121,7 +121,7 @@ function App() {
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center backdrop-blur-[2px]">
                     <a
                       href={image}
-                      download={`synmedvision-${Date.now()}.png`}
+                      download={`medisynvision-${Date.now()}.png`}
                       className="bg-white text-black px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover:scale-105 transition-transform shadow-xl hover:bg-zinc-100"
                     >
                       <Download className="w-5 h-5" />
@@ -142,7 +142,7 @@ function App() {
         </main>
 
         <footer className="mt-24 text-center text-zinc-600 text-sm">
-          <p>© 2025 SynMedVision Research. Powered by Stable Diffusion.</p>
+          <p>© 2025 MediSynVision Research. Powered by Stable Diffusion.</p>
         </footer>
       </div>
     </div>
